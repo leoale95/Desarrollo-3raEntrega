@@ -6,6 +6,9 @@
 @import url('./Components/_form.scss');
 @import url('./Base/_section.scss');
 
+// Algunas cosas las dejo aca ya que me resulta mas comodo modificarlas que andar buscandolas por carpetas //
+
+// Personalmente, prefiero tener todo en 1 archivo pero ordenado como Sass, que tener varios archivos en distintas carpetas. Aunque talvez si el proyecto escala tenga mas sentido.
 
 .navbar {
   position: fixed;  
@@ -58,7 +61,7 @@
 
 /*Nosotros */ 
 .nosotros{
-  margin-top: 10px;
+  @extend.envios
 }
 
 section {
@@ -79,3 +82,29 @@ section {
           padding-left: 2rem;
           padding-right: 2rem;
         }
+
+        @mixin social-button {
+          display: flex;
+          width: 50px;
+          vertical-align: middle;
+          transition: all 2s;
+          align-items: left;
+          margin-left: 1rem;
+        }
+        
+        .FB {
+          @include social-button;
+        
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+        
+        .IG {
+          @include social-button;
+        
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+        

@@ -50,15 +50,11 @@
 }
 
 /*Envios */
-.envios {
+.envios, .nosotros {
   margin-top: 10px;
 }
 
 /*Nosotros */
-.nosotros {
-  margin-top: 10px;
-}
-
 section {
   padding: 2rem;
 }
@@ -78,6 +74,30 @@ section img {
 form {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.FB {
+  display: flex;
+  width: 50px;
+  vertical-align: middle;
+  transition: all 2s;
+  align-items: left;
+  margin-left: 1rem;
+}
+.FB:hover {
+  transform: rotate(360deg);
+}
+
+.IG {
+  display: flex;
+  width: 50px;
+  vertical-align: middle;
+  transition: all 2s;
+  align-items: left;
+  margin-left: 1rem;
+}
+.IG:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
